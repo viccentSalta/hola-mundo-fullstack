@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Primer Paso Full Stack</title>
+    <style>
+        /* CSS: Aquí definimos el diseño */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            display: flex; 
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            transition: background 0.4s, color 0.4s; 
+        }
+        .modo-oscuro { background-color: #1a1a1a; color: #ffffff; }
+        button { 
+            padding: 12px 24px; 
+            font-size: 16px; 
+            cursor: pointer; 
+            border-radius: 8px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>¡Hola Mundo! 🚀</h1>
+    <p>Este es el inicio de mi camino como Programador Full Stack.</p>
+    <button id="btnCambiar">Activar Modo Oscuro</button>
+
+    <script>
+        // JavaScript: Aquí definimos la lógica
+        const boton = document.getElementById('btnCambiar');
+        
+        boton.addEventListener('click', () => {
+            document.body.classList.toggle('modo-oscuro');
+            
+            // Cambiamos el texto del botón según el modo
+            if (document.body.classList.contains('modo-oscuro')) {
+                boton.textContent = 'Activar Modo Claro';
+            } else {
+                boton.textContent = 'Activar Modo Oscuro';
+            }
+        });
+    </script>
+</body>
+</html>
