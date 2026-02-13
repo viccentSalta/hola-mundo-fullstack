@@ -1,0 +1,6 @@
+.container { max-width: 400px; margin: 50px auto; font-family: sans-serif; text-align: center; }
+.card { display: flex; gap: 10px; margin-bottom: 20px; }
+input { flex: 1; padding: 8px; border-radius: 5px; border: 1px solid #ccc; }
+button { cursor: pointer; padding: 8px; border-radius: 5px; border: none; background: #646cff; color: white; }
+li { display: flex; justify-content: space-between; background: #f9f9f9; padding: 10px; margin-bottom: 5px; border-radius: 5px; border: 1px solid #eee; }
+li button { background: none; color: black; margin-left: 5px; }
