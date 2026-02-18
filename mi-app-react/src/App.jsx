@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 function App() {
   const [objetivos, setObjetivos] = useState([])
   const [nuevoTexto, setNuevoTexto] = useState('')
-  const API_URL = 'https://backend-objetivos-salta.onrender.com/objetivos'
+  const API_URL = 'https://hola-mundo-fullstack.onrender.com/objetivos'
 
   const cargar = async () => {
     try {
